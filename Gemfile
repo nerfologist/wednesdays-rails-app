@@ -57,3 +57,5 @@ group :test do
 end
 
 gem "dotenv-rails", "~> 3.1"
+
+gem "shopify_app", "~> 22.4"
