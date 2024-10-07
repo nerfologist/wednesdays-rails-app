@@ -98,6 +98,10 @@ GEM
     debug (1.9.2)
       irb (~> 1.10)
       reline (>= 0.3.8)
+    dotenv (3.1.4)
+    dotenv-rails (3.1.4)
+      dotenv (= 3.1.4)
+      railties (>= 6.1)
     drb (2.2.1)
     erubi (1.13.0)
     globalid (1.2.1)
@@ -295,7 +299,7 @@ PLATFORMS
   arm-linux
   arm-linux-gnu
   arm-linux-musl
-  arm64-darwin
+  arm64-darwin-23
   x86-linux
   x86-linux-gnu
   x86-linux-musl
@@ -309,6 +313,7 @@ DEPENDENCIES
   brakeman
   capybara
   debug
+  dotenv-rails (~> 3.1)
   importmap-rails
   jbuilder
   puma (>= 5.0)
