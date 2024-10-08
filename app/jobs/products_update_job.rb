@@ -1,4 +1,6 @@
-class CustomersRedactJob < ActiveJob::Base
+# frozen_string_literal: true
+
+class ProductsUpdateJob < ActiveJob::Base
   extend ShopifyAPI::Webhooks::Handler
 
   class << self
@@ -12,10 +14,12 @@ class CustomersRedactJob < ActiveJob::Base
 
     if shop.nil?
       logger.error("#{self.class} failed: cannot find shop with domain '#{shop_domain}'")
+
       raise ActiveRecord::RecordNotFound, "Shop Not Found"
     end
 
     shop.with_shopify_session do
+      puts "products/update received, payload #{webhook}"
     end
   end
 end
