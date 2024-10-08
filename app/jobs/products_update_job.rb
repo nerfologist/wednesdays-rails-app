@@ -20,6 +20,8 @@ class ProductsUpdateJob < ActiveJob::Base
 
     shop.with_shopify_session do
       puts "products/update received, payload #{webhook}"
+      order_gid = webhook["admin_graphql_api_id"]
+      AddTags.call(id: order_gid, tags: [ "processed-by-rails-webhook" ])
     end
   end
 end
