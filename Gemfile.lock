@@ -293,6 +293,10 @@ GEM
       redirect_safely (~> 1.0)
       shopify_api (>= 14.3.0, < 15.0)
       sprockets-rails (>= 2.0.0)
+    shopify_graphql (1.2.7)
+      rails (>= 6.0.0)
+      shopify_api (>= 10.0)
+      shopify_app (>= 19.0)
     sorbet-runtime (0.5.11597)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
@@ -366,6 +370,7 @@ DEPENDENCIES
   rubocop-rails-omakase
   selenium-webdriver
   shopify_app (~> 22.4)
+  shopify_graphql (~> 1.2)
   sprockets-rails
   sqlite3 (>= 1.4)
   stimulus-rails
