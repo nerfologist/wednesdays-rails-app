@@ -153,7 +153,7 @@ GEM
     msgpack (1.7.3)
     multi_xml (0.7.1)
       bigdecimal (~> 3.1)
-    net-imap (0.4.16)
+    net-imap (0.5.0)
       date
       net-protocol
     net-pop (0.1.2)
@@ -190,7 +190,7 @@ GEM
     puma (6.4.3)
       nio4r (~> 2.0)
     racc (1.8.1)
-    rack (3.1.7)
+    rack (3.1.8)
     rack-session (2.0.0)
       rack (>= 3.0.0)
     rack-test (2.1.0)
@@ -293,11 +293,12 @@ GEM
       redirect_safely (~> 1.0)
       shopify_api (>= 14.3.0, < 15.0)
       sprockets-rails (>= 2.0.0)
-    shopify_graphql (1.2.7)
-      rails (>= 6.0.0)
-      shopify_api (>= 10.0)
+    shopify_graphql (2.0.0)
+      activesupport (>= 6.1.0)
+      rails (>= 6.1.0)
+      shopify_api (>= 13.4)
       shopify_app (>= 19.0)
-    sorbet-runtime (0.5.11597)
+    sorbet-runtime (0.5.11610)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -339,7 +340,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.18)
+    zeitwerk (2.7.1)
 
 PLATFORMS
   aarch64-linux
@@ -370,7 +371,7 @@ DEPENDENCIES
   rubocop-rails-omakase
   selenium-webdriver
   shopify_app (~> 22.4)
-  shopify_graphql (~> 1.2)
+  shopify_graphql (~> 2.0)
   sprockets-rails
   sqlite3 (>= 1.4)
   stimulus-rails
