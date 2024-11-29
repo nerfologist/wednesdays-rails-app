@@ -58,6 +58,6 @@ end
 
 gem "dotenv-rails", "~> 3.1"
 
-gem "shopify_app", "~> 22.4"
+gem "shopify_app", "~> 22.5"
 
 gem "shopify_graphql", "~> 1.2"
